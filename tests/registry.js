@@ -53,7 +53,18 @@ describe('registry', function () {
             });
         });
 
-        it('failure retry', function (done) {
+        it('should retrieve scoped packages', function (done) {
+            this.timeout(5000);
+
+            registry.get({id: '@sindresorhus/is'}, function (err, json, change) {
+                assert.ok(!err);
+                assert.equal(json.name, '@sindresorhus/is');
+                assert.deepEqual(change, {id: '@sindresorhus/is'});
+                done();
+            });
+        });
+
+        it('should retry on failure', function (done) {
             this.timeout(5000);
 
             var triggeredError = false
