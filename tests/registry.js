@@ -29,6 +29,7 @@ describe('registry', function () {
 
     describe('get()', function () {
         it('should retrieve valid data from the default registry', function (done) {
+            this.timeout(5000);
             registry.get({id: 'async'}, function (err, json, change) {
                 assert.ok(!err);
                 assert.equal(json.name, 'async');

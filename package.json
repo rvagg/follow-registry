@@ -8,17 +8,17 @@
   },
   "author": "Dav Glass <davglass@gmail.com>",
   "dependencies": {
-    "async": "^2.1.2",
-    "follow": "^0.12.1",
+    "async": "~3.1.0",
+    "follow": "~1.1.0",
     "mkdirp": "~0.5.1",
-    "normalize-registry-metadata": "^1.1.2",
-    "request": "^2.76.0"
+    "normalize-registry-metadata": "~1.1.2",
+    "request": "~2.88.0"
   },
   "license": "BSD",
   "devDependencies": {
     "istanbul": "~0.4.5",
-    "mocha": "^3.1.2",
-    "mockery": "^2.0.0"
+    "mocha": "~6.2.0",
+    "mockery": "~2.1.0"
   },
   "repository": {
     "type": "git",
